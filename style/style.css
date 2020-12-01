@@ -1,0 +1,152 @@
+* {
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+
+body {
+  background-image: url("../stuf/bg-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#top {
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 5px black;
+  color: palevioletred;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+#description {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#description {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#description::before,
+#description::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #00bfff;
+}
+
+#description::before {
+  margin-right: 0.25em;
+}
+
+#description::after {
+  margin-left: 0.25em;
+}
+
+form {
+  margin: 2em 25vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 255, 0.356);
+}
+
+#container {
+  margin: 20px 10%;
+  background-color: transparent;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  font-size: 1.125rem;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border: none;
+}
+
+.misfit input {
+  width: auto;
+}
+
+.button {
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: #f0f;
+  font-size: 1.125rem;
+  background-color: palevioletred;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(194, 96, 129);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  font-size: 1.3rem;
+  position: absolute;
+  opacity: 0;
+  top: -4px;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+label {
+  background-color: transparent;
+  font-size: 1.125rem;
+  margin-left: 0;
+}
+
+.label {
+  color: red;
+  text-shadow: 2px 2px 5px black;
+  text-decoration: purple;
+}
+
+@media (max-width: 600px) {
+  form {
+    margin: 0 -5px;
+  }
+}
